@@ -1,3 +1,3 @@
-# insight
+# Insight
 
-A quick description of insight.
+A quick description of Insight.

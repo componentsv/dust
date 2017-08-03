@@ -1,0 +1,89 @@
+{
+  "name"           : "signoir",
+  "private"        : true,
+  "version"        : "0.1.0",
+  "description"    : "Signoir application.",
+  "dependencies"   : {
+    "anchor"                           : "~0.10.5",
+    "async"                            : "~1.5.0",
+    "bcryptjs"                         : "~2.3.0",
+    "co-busboy"                        : "~1.3.1",
+    "jsonwebtoken"                     : "~5.4.1",
+    "lodash"                           : "~3.10.1",
+    "nodemailer"                       : "~1.10.0",
+    "purest"                           : "~2.0.0",
+    "sails-disk"                       : "~0.10.8",
+    "socket.io"                        : "~1.3.7",
+    "waterline"                        : "~0.10.28",
+    "strapi"                           : "~1.6.3",
+    "@angular/animations"              : "^4.0.0",
+    "@angular/common"                  : "^4.0.0",
+    "@angular/compiler"                : "^4.0.0",
+    "@angular/core"                    : "^4.0.0",
+    "@angular/forms"                   : "^4.0.0",
+    "@angular/http"                    : "^4.0.0",
+    "@angular/platform-browser"        : "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@angular/router"                  : "^4.0.0",
+    "core-js"                          : "^2.4.1",
+    "rxjs"                             : "^5.1.0",
+    "zone.js"                          : "^0.8.4"
+  },
+  "devDependencies": {
+    "strapi-generate"                 : "~1.6.3",
+    "strapi-generate-api"             : "~1.6.3",
+    "strapi-generate-email"           : "~1.6.3",
+    "strapi-generate-new"             : "~1.6.3",
+    "strapi-generate-upload"          : "~1.6.3",
+    "strapi-generate-users"           : "~1.6.3",
+    "@angular/cli"                    : "1.2.0",
+    "@angular/compiler-cli"           : "^4.0.0",
+    "@angular/language-service"       : "^4.0.0",
+    "@types/jasmine"                  : "~2.5.53",
+    "@types/jasminewd2"               : "~2.0.2",
+    "@types/node"                     : "~6.0.60",
+    "codelyzer"                       : "~3.0.1",
+    "jasmine-core"                    : "~2.6.2",
+    "jasmine-spec-reporter"           : "~4.1.0",
+    "karma"                           : "~1.7.0",
+    "karma-chrome-launcher"           : "~2.1.1",
+    "karma-cli"                       : "~1.0.1",
+    "karma-coverage-istanbul-reporter": "^1.2.1",
+    "karma-jasmine"                   : "~1.1.0",
+    "karma-jasmine-html-reporter"     : "^0.2.2",
+    "protractor"                      : "~5.1.2",
+    "ts-node"                         : "~3.0.4",
+    "tslint"                          : "~5.3.2",
+    "typescript"                      : "~2.3.3"
+  },
+  "main"           : "./server.js",
+  "scripts"        : {
+    "start"         : "node server.js",
+    "ng"            : "ng",
+    "build"         : "ng build",
+    "test"          : "ng test",
+    "lint"          : "ng lint",
+    "e2e"           : "ng e2e",
+    "sg:serve"      : "ng serve -dop false",
+    "sg:build"      : "ng build -dop false",
+    "sg:serve-watch": "ng serve -dop false --watch",
+    "sg:build-watch": "ng build -dop false --watch"
+  },
+  "author"         : {
+    "name" : "Author",
+    "email": "",
+    "url"  : ""
+  },
+  "maintainers"    : [
+    {
+      "name" : "Maintainers",
+      "email": "",
+      "url"  : ""
+    }
+  ],
+  "engines"        : {
+    "node": ">= 0.12.0",
+    "npm" : ">= 2.0.0"
+  },
+  "license"        : "MIT"
+}

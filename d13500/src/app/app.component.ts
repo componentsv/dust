@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  selectedAnimal = 'cat';
+  animals = ['cat', 'dog', 'zebra', 'giraffe']
+
+  onAnimalClicked(event:Event) {
+    const clickedAnimal = event.srcElement.innerHTML.trim();
+
+    this.selectedAnimal = clickedAnimal;
+  }
+
+  getAnimalStyle(animal) {
+    const isSelected = (animal === this.selectedAnimal);
+
+    return {
+      'padding':'10px',
+      'margin':'10px',
+      'color':isSelected ? '#ffffff' : '#000000', 'background-color':isSelected ? '#000000':'#ffffff',
+    }
+  }
 }

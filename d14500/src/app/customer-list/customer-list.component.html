@@ -1,7 +1,1 @@
-<div class="customerList">
-  <p>
-    <app-customer></app-customer>
-    <app-customer></app-customer>
-    <app-customer></app-customer>
-  </p>
-</div>
+<app-customer *ngFor="let customer of customerList" [customer]="customer" (clicked)="onCustomerClicked($event)"></app-customer>

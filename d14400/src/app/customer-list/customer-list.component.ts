@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerListComponent implements OnInit {
 
+  private customerList = [
+    {name:'Bryan', city:'Atlanta'},
+    {name:'Peter', city:'San Francisco'},
+    {name:'Janet', city:'Colorado'}
+  ];
+
   constructor() { }
 
   ngOnInit() {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, AfterViewChecked } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  input: string = '';
+  
+  @ViewChild('message') message;
+  
+  ngAfterViewChecked() {
+    console.log('AfterViewChecked');
+
+    if (isNaN(parseInt(this.input))){
+      this.message.nativeElement.innerHTML = "Input not numeric."; 
+    } else {
+      this.message.nativeElement.innerHTML = "Input is numeric."; }
+    }
 }

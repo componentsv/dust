@@ -36,4 +36,4 @@ export class AppComponent implements OnInit {
     this._myModal.nativeElement.style.display = 'none';
   }
 }
-}
+

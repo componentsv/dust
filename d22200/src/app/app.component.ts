@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ReversePipe } from './reverse.pipe';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  name: string = 'Orlandeau tgc';
 }

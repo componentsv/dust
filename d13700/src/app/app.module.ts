@@ -9,10 +9,11 @@ import { HovererDirective } from './hoverer.directive';
     AppComponent,
     HovererDirective
   ],
-  imports: [
+  imports     : [
     BrowserModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers   : [],
+  bootstrap   : [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

@@ -1,9 +1,9 @@
 import { Component, AfterViewInit, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector   : 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls  : ['./app.component.css']
 })
 export class AppComponent {
   upperCase: string = '';
@@ -17,6 +17,6 @@ export class AppComponent {
   }
 
   ngAfterViewInit() {
-    this.inputBox.nativeElement.focus()
+    this.inputBox.nativeElement.focus();
   }
 }

@@ -3,9 +3,10 @@ import { CommonModule } from '@angular/common';
 import { SupportComponent } from './support.component';
 
 @NgModule({
-  imports: [
+  imports     : [
     CommonModule
   ],
   declarations: [SupportComponent]
 })
-export class SupportModule { }
+export class SupportModule {
+}

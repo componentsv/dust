@@ -7,26 +7,27 @@ import { SupportComponent } from '../support/support.component';
 // import { RoutingRoutingModule } from './routing-routing.module';
 const routes: Routes = [
   {
-    path:'sales',
-    component:SalesComponent
+    path     : 'sales',
+    component: SalesComponent
   },
   {
-    path:'support',
-    component:SupportComponent
+    path     : 'support',
+    component: SupportComponent
   },
   {
-    path:'**',
-    component:SalesComponent
+    path     : '**',
+    component: SalesComponent
   }
-]
+];
 
 @NgModule({
-  imports: [
+  imports     : [
     RouterModule.forRoot(routes)
-    //CommonModule,
-    //RoutingRoutingModule
+    // CommonModule,
+    // RoutingRoutingModule
   ],
-  exports:[RouterModule],
+  exports     : [RouterModule],
   declarations: []
 })
-export class RoutingModule { }
+export class RoutingModule {
+}

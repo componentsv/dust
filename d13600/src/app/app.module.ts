@@ -9,10 +9,11 @@ import { SizerDirective } from './sizer.directive';
     AppComponent,
     SizerDirective
   ],
-  imports: [
+  imports     : [
     BrowserModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers   : [],
+  bootstrap   : [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

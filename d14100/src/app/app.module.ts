@@ -9,10 +9,11 @@ import { CarComponent } from './car.component';
     AppComponent,
     CarComponent
   ],
-  imports: [
+  imports     : [
     BrowserModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers   : [],
+  bootstrap   : [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

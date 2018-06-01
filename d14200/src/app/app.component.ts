@@ -1,19 +1,28 @@
-import { Component } from '@angular/core';
-import { ICar } from './icar';
+import { Component } from "@angular/core";
+import { ICar } from "./icar";
 
 @Component({
-  selector: 'app-root',
+  selector   : 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls  : ['./app.component.css']
 })
 export class AppComponent {
-  cars:Array<ICar> = [
-    {make:'bmw', model:'m3'},
-    {make:'porsche', model:'911'},
-    {make:'ford', model:'mustang'}
-  ]
+  cars: Array<ICar> = [
+    {
+      make : 'bmw',
+      model: 'm3'
+    },
+    {
+      make : 'porsche',
+      model: '911'
+    },
+    {
+      make : 'ford',
+      model: 'mustang'
+    }
+  ];
 
-  deleteCar(car:ICar) {
+  deleteCar(car: ICar) {
     alert('Deleting car: ' + JSON.stringify(car));
   }
 }

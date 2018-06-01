@@ -1,18 +1,16 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { ICar } from './icar';
+import { Component, EventEmitter, Input, Output } from "@angular/core";
+import { ICar } from "./icar";
 
 @Component({
-  selector: 'car',
+  selector   : 'car',
   templateUrl: './car.component.html',
-  styleUrls: ['./car.component.css']
+  styleUrls  : ['./car.component.css']
 })
 export class CarComponent {
-
-  @Input('theCar') car:ICar;
+  @Input('theCar') car: ICar;
   @Output() carDelete = new EventEmitter();
 
-  delete(car:ICar) {
+  delete(car: ICar) {
     this.carDelete.emit(car);
   }
-
 }

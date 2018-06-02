@@ -1,16 +1,17 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-customer',
+  selector   : 'app-customer',
   templateUrl: './customer.component.html',
-  styleUrls: ['./customer.component.css']
+  styleUrls  : ['./customer.component.css']
 })
 export class CustomerComponent implements OnInit {
 
   @Input() customer;
   @Output() clicked: EventEmitter<String> = new EventEmitter<string>();
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

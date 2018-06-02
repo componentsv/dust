@@ -11,10 +11,11 @@ import { CustomerComponent } from './customer/customer.component';
     CustomerListComponent,
     CustomerComponent
   ],
-  imports: [
+  imports     : [
     BrowserModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers   : [],
+  bootstrap   : [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

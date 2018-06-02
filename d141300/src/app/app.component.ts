@@ -3,38 +3,41 @@ import { Component, Input, DoCheck, IterableDiffers } from '@angular/core';
 @Component({
   selector: 'numbers',
   template: `
-    {{numbers}}
-    <br />
-    <p *ngFor="let change of changes">
-      {{change}}
-    </p>
+      {{numbers}}
+      <br/>
+      <p *ngFor="let change of changes">
+          {{change}}
+      </p>
   `,
-  styles:['p{padding:0;margin:0}']
+  styles  : ['p{padding:0;margin:0}']
 })
 export class NumbersComponent implements DoCheck {
-  @Input('numbers') numbersArray: Array<string>; 
-  changes: Array<string> = [];
-  differ;
+  @Input('numbers') numbersArray: Array<string>;
+                    changes: Array<string> = [];
+                    differ;
 
   constructor(private differs: IterableDiffers) {
-    this.differ = differs.find([]).create(null); 
+    this.differ = differs.find([]).create(null);
   }
 
   ngDoCheck() {
-    const differences = this.differ.diff(this.numbersArray); 
-    
+    const differences = this.differ.diff(this.numbersArray);
+
+
     if (differences) {
       if (differences.forEachAddedItem) {
         differences.forEachAddedItem((item) => {
           if ((item) && (item.item)) {
-            this.changes.push('added ' + item.item); }
+            this.changes.push('added ' + item.item);
+          }
         });
       }
-      
+
       if (differences.forEachRemovedItem) {
         differences.forEachRemovedItem((item) => {
           if ((item) && (item.item)) {
-            this.changes.push('removed ' + item.item); }
+            this.changes.push('removed ' + item.item);
+          }
         });
       }
     }
@@ -42,9 +45,9 @@ export class NumbersComponent implements DoCheck {
 }
 
 @Component({
-  selector: 'app-root',
+  selector   : 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls  : ['./app.component.css']
 })
 export class AppComponent {
   numbers = '';

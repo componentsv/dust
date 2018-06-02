@@ -10,12 +10,13 @@ import { AppComponent, NumbersComponent } from './app.component';
     AppComponent,
     NumbersComponent
   ],
-  imports: [
+  imports     : [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers   : [],
+  bootstrap   : [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

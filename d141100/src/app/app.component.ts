@@ -3,11 +3,11 @@ import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 @Component({
   selector: 'name',
   template: `
-  <p *ngFor="let change of changes">
-    {{change}}
-  </p>
+      <p *ngFor="let change of changes">
+          {{change}}
+      </p>
   `,
-  styles: []
+  styles  : []
 })
 export class NameComponent implements OnChanges {
   @Input('name') nm;
@@ -19,9 +19,9 @@ export class NameComponent implements OnChanges {
 }
 
 @Component({
-  selector: 'app-root',
+  selector   : 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls  : ['./app.component.css']
 })
 export class AppComponent {
   name: string = '';
